@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFA500">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text= "TODAY'S DOG"
+                android:textSize = "35sp"
+                android:textStyle="bold"
+                android:textColor="#8B4910"/>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center_horizontal"
+                android:text="TextView"
+                android:padding="5dp"
+                android:textColor="#8B4910"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/bulldog" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="How about bulldog?\nIt is very cute dog."
+                android:textColor="#8B4910"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    tools:context=".Introduceactivity">
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="GO TO BREED LIST"
+        android:background="@drawable/button_border"
+        android:padding="2dp"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/youtube" />
+
+    <TextView
+        android:id="@+id/breed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="USERNAME"
+        android:textColor="#8B4513"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#8B4513"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/breed">
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/breed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/breed"
+            app:layout_constraintTop_toTopOf="@+id/breed"
+            tools:srcCompat="@tools:sample/avatars" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="In breed list page, you can search by 4 ways (weight, height, name, breed).\n\nAlso, you can choose and make your own breed list by using CHECKBOX.\n\nAnd RENEW button will up to date your check box in breed list whic is saved in your kakao account.\n\nIn the YouTube page, you can watch videos about dogs and solve quizes."
+        android:textColor="#8B4513"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open" />
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="GO TO YOUTUBE VIDEO"
+        android:background="@drawable/button_border"
+        android:padding="2dp"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:padding="5dp"
+        android:textColor="#8B4513"
+        android:text="TODAY'S DOG"
+        app:layout_constraintStart_toStartOf="@+id/breed"
+        app:layout_constraintTop_toBottomOf="@+id/breed" />
+</androidx.constraintlayout.widget.ConstraintLayout >
+</androidx.drawerlayout.widget.DrawerLayout>

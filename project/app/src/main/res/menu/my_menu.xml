@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item0"
+        android:title="Login &amp; Logout" />
+
+
+    <item
+        android:id="@+id/menu_item1"
+        android:title="Introduce" />
+    <item
+        android:id="@+id/menu_item2"
+        android:title="Breed list" />
+    <item
+        android:id="@+id/menu_item3"
+        android:title="My list" />
+    <item
+        android:id="@+id/menu_item4"
+        android:title="Video" />
+    <item
+        android:id="@+id/menu_item5"
+        android:title="Quiz" />
+
+</menu>

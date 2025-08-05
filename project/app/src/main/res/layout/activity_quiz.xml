@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    tools:context=".quizactivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="596dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="QUIZ ABOUT VIDEO"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        android:text="Dogs belong to the mammal family."
+        app:layout_constraintBottom_toBottomOf="@+id/t1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t1" />
+
+    <CheckBox
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="@+id/f1"
+        app:layout_constraintEnd_toStartOf="@+id/f1"
+        app:layout_constraintTop_toTopOf="@+id/f1" />
+
+    <CheckBox
+        android:id="@+id/f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="False"
+        android:textColor="#8B4513"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        android:text="All dogs have the same breed characteristics."
+        app:layout_constraintBottom_toBottomOf="@+id/t2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t2" />
+
+    <CheckBox
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="@+id/f2"
+        app:layout_constraintEnd_toStartOf="@+id/f2"
+        app:layout_constraintTop_toTopOf="@+id/f2" />
+
+    <CheckBox
+        android:id="@+id/f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#8B4513"
+        android:text="False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f1" />
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        android:text="Dogs are descendants of wolves."
+        app:layout_constraintBottom_toBottomOf="@+id/t3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <CheckBox
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8B4513"
+        android:text="True"
+        app:layout_constraintBottom_toBottomOf="@+id/f3"
+        app:layout_constraintEnd_toStartOf="@+id/f3"
+        app:layout_constraintTop_toTopOf="@+id/f3" />
+
+    <CheckBox
+        android:id="@+id/f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#8B4513"
+        android:layout_marginEnd="16dp"
+        android:text="False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2" />
+
+    <TextView
+        android:id="@+id/q4"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:textColor="#8B4513"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Dogs have a better sense of smell compared to humans."
+        app:layout_constraintBottom_toBottomOf="@+id/t4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t4" />
+
+    <CheckBox
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="@+id/f4"
+        app:layout_constraintEnd_toStartOf="@+id/f4"
+        app:layout_constraintTop_toTopOf="@+id/f4" />
+
+    <CheckBox
+        android:id="@+id/f4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8B4513"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f3" />
+
+    <TextView
+        android:id="@+id/q5"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        android:text="Dogs are colorblind and can only see in black and white."
+        app:layout_constraintBottom_toBottomOf="@+id/t5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t5" />
+
+    <CheckBox
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:textColor="#8B4513"
+        app:layout_constraintBottom_toBottomOf="@+id/f5"
+        app:layout_constraintEnd_toStartOf="@+id/f5"
+        app:layout_constraintTop_toTopOf="@+id/f5" />
+
+    <CheckBox
+        android:id="@+id/f5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#8B4513"
+        android:text="False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f4" />
+
+    <Button
+        android:id="@+id/checkanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="SUBMIT ANSWER"
+        android:background="@drawable/button_border"
+        android:padding="5dp"
+        android:textColor="#8B4513"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/goldenretriever" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
